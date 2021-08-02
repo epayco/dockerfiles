@@ -1,0 +1,13 @@
+# The address of your server
+mercure.epayco.xyz
+
+route {
+    mercure {
+        # Publisher JWT key
+        publisher_jwt ${MERCURE_PUBLISHER_JWT_KEY}
+        # Subscriber JWT key
+        subscriber_jwt ${MERCURE_SUBSCRIBER_JWT_KEY}
+    }
+
+    respond "Not Found" 404
+}
